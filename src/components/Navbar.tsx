@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
-    <div className={cn("fixed flex justify-around top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
+    <div className={cn("fixed flex justify-around top-13 inset-x-0 max-w-2xl mx-auto z-50", className)}>
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col items-center justify-center">
